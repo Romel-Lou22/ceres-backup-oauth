@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Información sobre la integración de respaldos privados ERP CERES con Google Drive mediante rclone.">
+  <title>ERP CERES Backup | Información de la aplicación</title>
+  <style>:root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color-scheme:light;background:#f5f7fb;color:#17243b}*{box-sizing:border-box}body{margin:0}header{background:#132e4f;color:#fff;padding:2.5rem 1.25rem}main{max-width:840px;margin:2rem auto;padding:0 1.25rem 3rem}.tag{font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;color:#bde5d5;font-weight:700}h1{font-size:clamp(1.7rem,4vw,2.6rem);margin:.35rem 0 .65rem}h2{font-size:1.2rem;margin-top:1.65rem}p,li{line-height:1.7}a{color:#075d99}header a{color:#c7eafc}.card{background:white;border:1px solid #e0e7ef;border-radius:14px;padding:1.5rem;box-shadow:0 4px 18px #1b3c6810}.links{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.5rem}footer{font-size:.9rem;color:#52617a;margin-top:2rem}.note{color:#496177}</style>
+</head>
+<body>
+  <header>
+    <div style="max-width:840px;margin:auto">
+      <div class="tag">Integración privada de respaldos</div>
+      <h1>ERP CERES Backup</h1>
+      <p>Información sobre la aplicación utilizada para autorizar el almacenamiento de respaldos de ERP CERES en Google Drive.</p>
+    </div>
+  </header>
+  <main>
+    <section class="card">
+      <h2>¿Para qué se utiliza?</h2>
+      <p>ERP CERES Backup es una integración administrativa de uso restringido. Su objetivo es permitir que un servidor autorizado transfiera copias de seguridad de la base de datos de ERP CERES a una cuenta de Google Drive controlada por su responsable.</p>
+      <h2>Acceso solicitado a Google</h2>
+      <p>La integración utiliza rclone y solicita el alcance <code>https://www.googleapis.com/auth/drive.file</code>, limitado a los archivos de Drive que la aplicación crea o utiliza con autorización. No solicita permisos sobre Gmail, contactos ni otros servicios de Google.</p>
+      <h2>Protección de los respaldos</h2>
+      <p>El mecanismo está diseñado para cifrar los respaldos antes de transferirlos a la nube. El acceso a los archivos y a las claves de recuperación debe quedar limitado al personal autorizado. Este sitio es únicamente informativo: no permite acceder al ERP ni descargar respaldos.</p>
+      <h2>Responsable y contacto</h2>
+      <p>Administración técnica de ERP CERES. Consultas sobre la autorización de Google Drive: <a href="mailto:ceresfarmstablet4@gmail.com">ceresfarmstablet4@gmail.com</a>.</p>
+      <nav class="links" aria-label="Documentos de la aplicación">
+        <a href="./privacy.html">Política de privacidad</a>
+        <a href="./terms.html">Condiciones de uso</a>
+      </nav>
+    </section>
+    <footer>Última actualización: 19 de noviembre de 2026. Esta página no es un acceso público al ERP.</footer>
+  </main>
+</body>
+</html>
